@@ -167,6 +167,8 @@
 	.about {
 		&__inner {
 			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 		img {
