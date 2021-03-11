@@ -1,3 +1,54 @@
+@media (max-width:1280px) {
+	.reviews {
+		&__slider-inner {
+			padding: 0;
+		}
+
+		.slick-dots {
+			display: flex;
+			position: absolute;
+			left: 50%;
+			bottom: -50px;
+			transform: translateX(-50%);
+
+
+			li {
+				&:not(:last-child) {
+					margin-right: 10px;
+				}
+
+
+
+				&.slick-active {
+					button {
+						background-color: transparent;
+						border: 1px solid $darker;
+					}
+
+				}
+			}
+
+
+			button {
+				transition: all .2s ease;
+				font-size: 0;
+				border: none;
+				background-color: $darker;
+				width: 10px;
+				height: 12px;
+				border-radius: 50%;
+
+			}
+		}
+	}
+
+	.contacts {
+		iframe {
+			width: 500px;
+		}
+	}
+}
+
 @media (max-width:1227px) {
 	.works {
 		&__inner {
@@ -60,20 +111,66 @@
 			top: 100px;
 		}
 	}
-}
 
-@media (max-width:768px) {
-	.about {
+	.team {
 		&__inner {
-			text-align: center;
+			flex-flow: column wrap;
+		}
+
+		&__item {
+			margin: 20px 0;
+
+			&:nth-child(1),
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.contacts {
+		&__inner {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 		}
 
+		&__item {
+			&:first-child {
+				text-align: center;
+			}
+		}
+
+		&__form {
+			margin-bottom: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__input {
+			display: block;
+		}
+
+		&__item-map {
+			max-width: 100%;
+		}
+
+		iframe {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width:968px) {
+	.about {
+		&__inner {
+			flex-direction: column;
+		}
+
 		img {
 			max-width: 100%;
-			height: auto;
 		}
 
 		&__item-block {
@@ -81,6 +178,45 @@
 		}
 
 		&__item {}
+	}
+}
+
+@media (max-width:768px) {
+
+	.reviews {
+		&__slider-item {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__slider-text {}
+
+	}
+
+	.how-we-work {
+		&__inner {
+			display: block;
+		}
+
+		&__slider-images {
+			padding: 0 30px;
+		}
+
+		&__item {
+			display: block;
+			margin: 20px 0;
+		}
+	}
+
+	.reviews {
+		&__item {
+			display: block;
+		}
+
+		&__slider-images {
+			display: none;
+		}
 	}
 }
 
@@ -99,6 +235,12 @@
 			margin: 30px 0;
 		}
 	}
+
+	.contacts {
+		&__input {
+			width: 350px;
+		}
+	}
 }
 
 @media (max-width:500px) {
@@ -110,5 +252,13 @@
 		color: #fff;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
 		font-weight: 500;
+	}
+}
+
+@media (max-width:400px) {
+	.contacts {
+		&__input {
+			width: 250px;
+		}
 	}
 }
