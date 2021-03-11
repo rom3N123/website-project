@@ -52,8 +52,26 @@
 	}
 }
 
-@media (max-width:968px) {
-	.about {}
+@media (max-width:768px) {
+	.about {
+		&__inner {
+			text-align: center;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		&__item-block {
+			margin: 0;
+		}
+
+		&__item {}
+	}
 }
 
 @media (max-width:500px) {

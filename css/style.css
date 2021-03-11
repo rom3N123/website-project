@@ -984,6 +984,29 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  .about__inner {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about img {
+    max-width: 100%;
+    height: auto;
+  }
+  .about__item-block {
+    margin: 0;
+  }
+}
+
 @media (max-width: 500px) {
   .main-page__inner {
     text-align: center;
