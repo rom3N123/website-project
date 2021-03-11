@@ -579,6 +579,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 100;
 }
 
 .menu__list:not(:last-child) {
@@ -890,6 +891,7 @@ p {
 }
 
 .contacts {
+  padding-bottom: 30px;
   background-color: #533738;
   color: #F6EDE9;
 }
